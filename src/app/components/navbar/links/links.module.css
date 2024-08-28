@@ -1,0 +1,23 @@
+/* links.module.css */
+
+.link {
+    text-decoration: none;
+    color: #e2e2e3;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: rgba(238, 16, 16, 0.703);
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 40px;
+  }
+  
+  .link:last-child {
+    margin-right: 0;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+    background-color: rgba(105, 95, 78, 0.621);
+    color: #000;
+  }
+  
