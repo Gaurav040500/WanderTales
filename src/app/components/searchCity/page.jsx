@@ -1,30 +1,31 @@
-// Ensure this file is treated as a Client Component
 "use client";
 
 import React from "react";
 
-const Page = () => {
-
-    const handleButton = () => {
-        alert("Button clicked");
-    };
+const SearchCity = () => {
+  const handleButton = () => {
+    alert("Button clicked");
+  };
 
   return (
     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "15vh", position: "relative" }}>
       <div style={{ display: "flex", alignItems: "center", position: "relative" }}>
-        <i className="fas fa-search" style={{ marginRight: "10px", color: "#555" }}></i>
+        <label htmlFor="city-search" style={{ marginRight: "10px", color: "#555" }}>
+          <i className="fas fa-search"></i>
+        </label>
         <input
+          id="city-search"
           type="text"
           placeholder="Search your city.."
           style={{
-              width: "250px",
-              height: "9vh",
-              borderRadius: "5px",
-              padding: "0 10px", // Adjust padding to fit icon
-              fontWeight: "bold", // Make placeholder text bold
-              border: "1px solid #ccc",
-              boxShadow: "0 4px 8px rgba(0,0,0,0.2)" // Shadow for input
-            }}
+            width: "250px",
+            height: "9vh",
+            borderRadius: "5px",
+            padding: "0 10px",
+            fontWeight: "bold",
+            border: "1px solid #ccc",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+          }}
         />
       </div>
       <button
@@ -33,7 +34,7 @@ const Page = () => {
           width: "250px",
           height: "9vh",
           borderRadius: "5px",
-          backgroundColor: "#007bff", // Blue background
+          backgroundColor: "#007bff",
           color: "white",
           border: "none",
           display: "flex",
@@ -41,7 +42,7 @@ const Page = () => {
           justifyContent: "center",
           fontSize: "16px",
           marginLeft: "25px",
-          boxShadow: "0 4px 8px rgba(0,0,0,0.2)" // Shadow for button
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
         }}
       >
         <i className="fas fa-plus" style={{ marginRight: "10px" }}></i>
@@ -51,4 +52,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default SearchCity;
